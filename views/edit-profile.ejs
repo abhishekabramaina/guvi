@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Profile</title>
+</head>
+<body>
+  <h1>Edit Profile</h1>
+  <form action="/edit-profile" method="post">
+    <label for="age">Age:</label>
+    <input type="text" id="age" name="age" value="<%= user.age %>"><br>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="text" id="dob" name="dob" value="<%= user.dob %>"><br>
+
+    <label for="contact">Contact:</label>
+    <input type="text" id="contact" name="contact" value="<%= user.contact %>"><br>
+
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city" value="<%= user.city %>"><br>
+
+    <label for="organization">Organization:</label>
+    <input type="text" id="organization" name="organization" value="<%= user.organization %>"><br>
+
+    <input type="submit" value="Save Changes">
+  </form>
+  <br>
+  <a href="/profile">Back to Profile</a>
+  <br>
+  <a href="/logout">Logout</a>
+</body>
+</html>
